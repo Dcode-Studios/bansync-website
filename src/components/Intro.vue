@@ -6,6 +6,7 @@
       <h4>Help keep out possible troublemakers from your server by knowing user's previous bans, or by linking your servers together to sync bans within them.</h4>
     </div>
     <img class="bansync_helpmenu" src="../assets/bansync_help_menu.png">
+    <a class="button" href="https://discord.com/oauth2/authorize?client_id=743234197484994610&permissions=347328&scope=applications.commands%20bot">Invite bot</a>
   </div>
 </template>
 
