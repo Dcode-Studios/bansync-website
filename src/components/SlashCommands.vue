@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'BotLists'
+  name: 'SlashCommands'
 }
 </script>
 
@@ -45,8 +45,7 @@ div {
   text-align: center;
 }
 img {
-    width: 40%;
-  height: 40%;
+  max-width: 75%;
   min-width: 300px;
   display: block;
   margin-left: auto;
