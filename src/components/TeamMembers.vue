@@ -48,6 +48,13 @@ export default {
   margin-right: auto;
   margin-left: auto;
   min-width: 200px;
+  transition: transform .2s; /* Animation */
+}
+.teamUserBox:hover {
+  background-color: rgb(51, 51, 51);
+  border: #42b983 solid 1px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  transform: scale(1.1);
 }
 :link {
   text-decoration: none;
