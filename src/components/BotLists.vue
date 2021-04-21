@@ -32,7 +32,7 @@ img {
   opacity: 1;
   animation: fadeIn 1s ease;
   margin: 4px;
-  max-width: 250px;
+  max-width: 300px;
 }
 @keyframes fadeIn{
   0%{
