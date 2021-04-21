@@ -2,13 +2,17 @@
 <div class="intro">
   <br>
   <h3>🛠 Team Members</h3>
-  <ol>
-    <li><div class="teamUserBox">
-      <img src="../assets/logo.png" id="teamUserPfp">
+  <ol id="teamList">
+    <li v-for="item in members" :key="item.message">
+      <a v-bind:href="`${item.href}`">
+        <div class="teamUserBox">
+        <img v-bind:src="`${item.icon}`" id="teamUserPfp">
+        <br>
+        <a><b>{{item.name}}</b></a>
+        </div>
+      </a>
       <br>
-      <a><b>TechGeekGamer</b></a>
-      </div></li>
-      <br>
+    </li>
   </ol>
 </div>
 <br>
@@ -16,7 +20,12 @@
 
 <script>
 export default {
-  name: 'TeamMembers'
+  name: 'TeamMembers',
+    data() {
+    return {
+      members: require("../assets/team.json")
+    }
+  }
 }
 </script>
 
@@ -32,6 +41,12 @@ export default {
 .teamUserBox {
   border: white solid 1px;
   padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+:link {
+  text-decoration: none;
+  cursor:pointer;
 }
 .intro {
   color: #42b983;
