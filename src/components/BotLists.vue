@@ -2,7 +2,6 @@
 <br>
 <div class="intro">
   <h3>⬆️ Bot Lists</h3>
-  <p>Help BanSync get to more servers by voting for it on bot lists!</p>
 </div>
 <div>
     <a href="https://top.gg/bot/743234197484994610">
