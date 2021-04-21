@@ -5,20 +5,25 @@
 </div>
 <div>
     <a href="https://top.gg/bot/743234197484994610">
-    <img alt="Failed to load top.gg widget" src="https://top.gg/api/widget/743234197484994610.svg">
+    <img alt="Failed to load top.gg widget" src="https://top.gg/api/widget/743234197484994610.svg" @error="replaceByDefault">
     </a>
     <a href="https://botsfordiscord.com/bot/743234197484994610">
-    <img title="BanSync on Bots for Discord!" alt="Failed to load BFD widget" src="https://botsfordiscord.com/api/bot/743234197484994610/widget">
+    <img title="BanSync on Bots for Discord!" alt="Failed to load BFD widget" src="https://botsfordiscord.com/api/bot/743234197484994610/widget" @error="replaceByDefault">
     </a>
     <a href="https://discord.boats/bot/743234197484994610">
-    <img title="BanSync on Discord Boats!" alt="Failed to load Discord Boats widget" src="https://discord.boats/api/widget/743234197484994610">
+    <img title="BanSync on Discord Boats!" alt="Failed to load Discord Boats widget" src="https://discord.boats/api/widget/743234197484994610" @error="replaceByDefault">
     </a>
 </div>
 </template>
 
 <script>
 export default {
-  name: 'BotLists'
+  name: 'BotLists',
+  methods:{
+    replaceByDefault(e){
+      e.target.src = "/failed_to_load.png"
+    }
+  }
 }
 </script>
 
