@@ -1,7 +1,7 @@
 <template>
   <Intro/>
-  <BotLists/>
   <SlashCommands/>
+  <BotLists/>
 </template>
 
 <script>
