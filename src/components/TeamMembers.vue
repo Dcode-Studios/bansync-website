@@ -37,12 +37,17 @@ export default {
   padding: 0px;
   margin: 0px;
   border-radius: 50%;
+  min-width: 100px;
 }
 .teamUserBox {
   border: white solid 1px;
   padding: 5px;
   color: white;
   text-decoration: none;
+  max-width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 200px;
 }
 :link {
   text-decoration: none;
