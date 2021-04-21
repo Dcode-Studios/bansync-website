@@ -6,7 +6,7 @@
     <li v-for="item in members" :key="item.message">
       <a v-bind:href="`${item.href}`">
         <div class="teamUserBox">
-        <img v-bind:src="`${item.icon}`" id="teamUserPfp">
+        <img v-bind:src="`${item.icon}`" id="teamUserPfp" @error="replaceByDefault">
         <br>
         <a><b>{{item.name}}</b></a>
         </div>
@@ -21,9 +21,14 @@
 <script>
 export default {
   name: 'TeamMembers',
-    data() {
+  data() {
     return {
       members: require("../assets/team.json")
+    }
+  },
+  methods:{
+    replaceByDefault(e){
+      e.target.src = "/failed_to_load_pfp.png"
     }
   }
 }
@@ -47,7 +52,7 @@ export default {
   max-width: fit-content;
   margin-right: auto;
   margin-left: auto;
-  min-width: 200px;
+  min-width: 250px;
   transition: transform .2s; /* Animation */
 }
 .teamUserBox:hover {
