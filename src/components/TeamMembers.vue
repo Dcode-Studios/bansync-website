@@ -61,6 +61,12 @@ export default {
   box-shadow: 0 0 10px rgb(255, 255, 255);
   transform: scale(1.1);
 }
+.teamUserBox:active {
+  background-color: rgb(98, 227, 174);
+  border: #42b983 solid 1px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+    transform: scale(1.2);
+}
 :link {
   text-decoration: none;
   cursor:pointer;
