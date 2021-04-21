@@ -22,6 +22,7 @@ export default {
   text-align: center;
 }
 .logo {
+  min-width: 150px;
   width: 10%;
   height: 10%;
   border-radius: 50%;
