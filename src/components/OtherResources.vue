@@ -4,8 +4,6 @@
   <h3>ℹ️ Other Resources</h3>
   <ol>
     <li><a href="/privacy_policy.pdf">Privacy Policy</a></li>
-    <br>
-    <li><a href="https://github.com/TechGeekGamer">Main Developer's GitHub (TechGeekGamer)</a></li>
   </ol>
 </div>
 <br>
