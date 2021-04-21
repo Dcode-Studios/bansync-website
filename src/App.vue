@@ -2,6 +2,7 @@
   <Intro/>
   <About/>
   <SlashCommands/>
+  <TeamMembers/>
   <BotLists/>
   <OtherResources/>
 </template>
@@ -12,6 +13,7 @@ import BotLists from './components/BotLists.vue'
 import SlashCommands from './components/SlashCommands'
 import About from './components/About'
 import OtherResources from './components/OtherResources'
+import TeamMembers from './components/TeamMembers'
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
     BotLists,
     About,
     SlashCommands,
-    OtherResources
+    OtherResources,
+    TeamMembers
   }
 }
 </script>
