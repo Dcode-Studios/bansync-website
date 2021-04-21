@@ -35,6 +35,7 @@ export default {
   width: 40%;
   height: 40%;
   min-width: 250px;
+  max-width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
