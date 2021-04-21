@@ -1,7 +1,7 @@
 <template>
 <br>
 <div class="intro">
-  <h3>⬆️ Bot Lists</h3>
+  <h3 style="color: #42b983;">⬆️ Bot Lists</h3>
 </div>
 <div>
     <a href="https://top.gg/bot/743234197484994610">
@@ -30,7 +30,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .intro {
-  color: #42b983;
+  color: #ffffff;
   text-align: center;
 }
 img {
