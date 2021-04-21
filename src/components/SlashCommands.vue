@@ -3,7 +3,7 @@
 <div>
   <div class="intro">
     <h3>/ Slash Commands</h3>
-    <p>BanSync supports Slash Commands! While the available commands for Slash Commands are pretty small at the moment, we're always working on adding more!</p>
+    <p>BanSync has work in progress Slash Commands!</p>
   </div>
   <img src="../assets/slash_commands.png">
 </div>
