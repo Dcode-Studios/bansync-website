@@ -1,5 +1,6 @@
 <template>
   <Intro/>
+  <About/>
   <SlashCommands/>
   <BotLists/>
 </template>
@@ -8,12 +9,14 @@
 import Intro from './components/Intro.vue'
 import BotLists from './components/BotLists.vue'
 import SlashCommands from './components/SlashCommands'
+import About from './components/About'
 
 export default {
   name: 'App',
   components: {
     Intro,
     BotLists,
+    About,
     SlashCommands
   }
 }
