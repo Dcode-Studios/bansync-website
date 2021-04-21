@@ -3,7 +3,7 @@
 <div>
   <div class="intro">
     <h3>/ Slash Commands</h3>
-    <p>BanSync has work in progress Slash Commands!</p>
+    <p>BanSync has work in progress Slash Commands, but more are to come!</p>
   </div>
   <img src="../assets/slash_commands.png">
 </div>
