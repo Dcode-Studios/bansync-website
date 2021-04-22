@@ -41,8 +41,8 @@ body {
 .button {
   color: rgb(255, 255, 255);
   text-decoration:none;
-  border: 10px solid rgb(109, 109, 109);
-  background-color: rgb(109, 109, 109);
+  border: 15px solid #42b983;
+  background-color: #42b983;
   border-radius: 5px;
   margin: 20px;
   text-align: center;
@@ -51,5 +51,15 @@ body {
   display: block;
   max-width: fit-content;
   cursor: pointer;
+  font-size: 20pt;
+  transition: transform .2s; /* Animation */
+}
+.button:hover {
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+.button:active {
+  box-shadow: 0 0 7px rgb(255, 255, 255);
+  transform: scale(1.2);
 }
 </style>
