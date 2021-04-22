@@ -5,8 +5,8 @@
       <h1 style="color: #42b983;">BanSync</h1>
       <h4 id="topmsg">Help keep out possible troublemakers from your server by knowing user's previous bans, or by linking your servers together to sync bans within them.</h4>
     </div>
+    <a class="button" href="https://discord.com/oauth2/authorize?client_id=743234197484994610&permissions=347328&scope=applications.commands%20bot">Invite Bot</a>
     <img class="bansync_helpmenu" src="../assets/bansync_help_menu.png">
-    <a class="button" href="https://discord.com/oauth2/authorize?client_id=743234197484994610&permissions=347328&scope=applications.commands%20bot">Invite bot</a>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #topmsg {
-  max-width: 500px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
