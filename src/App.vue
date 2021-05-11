@@ -1,65 +1,50 @@
 <template>
-  <Intro/>
-  <About/>
-  <SlashCommands/>
-  <TeamMembers/>
-  <BotLists/>
-  <OtherResources/>
+  <div id="app">
+    <!--
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>-->
+      <!-- Image and text -->
+  <b-navbar type="dark" variant="info" class="mb-5">
+    <b-navbar-brand href="#" class="customnav-brnd">
+      <img src="/logo.jpg" width="40px" height="40px" class="d-inline-block align-top" alt="Logo">
+      BanSync
+    </b-navbar-brand>
+    <b-navbar-nav class="ml-auto">
+        <b-nav-item class="button" href="https://discord.com/oauth2/authorize?client_id=743234197484994610&permissions=347328&scope=applications.commands%20bot">Invite the Bot</b-nav-item>
+        <b-nav-item href="https://bansync.dcode.site/privacy_policy.pdf">Privacy Policy</b-nav-item>
+      </b-navbar-nav>
+  </b-navbar>
+    <router-view/>
+  </div>
 </template>
-
-<script>
-import Intro from './components/Intro.vue'
-import BotLists from './components/BotLists.vue'
-import SlashCommands from './components/SlashCommands'
-import About from './components/About'
-import OtherResources from './components/OtherResources'
-import TeamMembers from './components/TeamMembers'
-
-export default {
-  name: 'App',
-  components: {
-    Intro,
-    BotLists,
-    About,
-    SlashCommands,
-    OtherResources,
-    TeamMembers
-  }
-}
-</script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  font-size: 15pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  background-color: #2c3e50;
+  height: 100%;
+  width: 100vw;
+  margin: 0;
 }
-body {
-    background-color: black;
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
 }
-.button {
-  color: rgb(255, 255, 255);
-  text-decoration:none;
-  border: 15px solid #42b983;
-  background-color: #42b983;
-  border-radius: 5px;
-  margin: 20px;
-  text-align: center;
-  margin-left: auto;
-  margin-right:auto;
-  display: block;
-  max-width: fit-content;
-  cursor: pointer;
-  font-size: 20pt;
-  transition: transform .2s; /* Animation */
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
-.button:hover {
-  box-shadow: 0 0 5px rgb(255, 255, 255);
-  transform: scale(1.1);
+
+.customnav-brnd {
+  font-size: 1.7rem;
 }
-.button:active {
-  box-shadow: 0 0 7px rgb(255, 255, 255);
-  transform: scale(1.2);
+.navbar {
+  padding: .2rem .5rem;
 }
 </style>
