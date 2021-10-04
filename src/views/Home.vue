@@ -127,11 +127,6 @@ export default {
           "redirect": "https://twitter.com/alexgsm60hz"
         },
         {
-          "imgUrl": "/avatars/elijah.jpg",
-          "name": "ElijahC06",
-          "redirect": "https://github.com/ElijahC06"
-        },
-        {
           "imgUrl": "/avatars/adelaide.jpg",
           "name": "adelaide",
           "redirect": "https://www.reddit.com/u/ScarlettDawnnn"
