@@ -1,7 +1,10 @@
 <template>
   <div class="home">
     <b-container>
-
+    <b-alert variant="warning" :show="true">
+     <p>We are currently in the process of rewriting the bot to comply with Discord's Slash Command requirements. The current BanSync version has entered a "maintenance mode" state where we only release updates in cases of emergency bug fixes, and don't require extensive recoding to fix.</p>
+     <a href="https://discord.gg/eFCTdNwE6Q">Learn More (Support Server)</a>
+    </b-alert>
       <b-row class="">
         <b-col md="1" lg="6" class="mx-auto">
           <b-jumbotron header="BanSync" style="background-color: #01E8B9;"
