@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <!--
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>-->
-      <!-- Image and text -->
-  <b-navbar type="dark" variant="info" class="mb-5">
+  <b-navbar toggleable="lg" type="dark" variant="info" class="mb-2">
     <b-navbar-brand href="#" class="customnav-brnd">
-      <img src="/logo.jpg" width="40px" height="40px" class="d-inline-block align-top" alt="Logo">
+      <b-img width="40px" src="/logo.jpg" alt="Bot Logo"/>
       BanSync
     </b-navbar-brand>
-    <b-navbar-nav class="ml-auto">
-        <b-nav-item class="button" href="https://discord.com/oauth2/authorize?client_id=743234197484994610&permissions=347328&scope=applications.commands%20bot">Invite the Bot</b-nav-item>
-        <b-nav-item href="https://bansync.dcode.site/privacy_policy.pdf">Privacy Policy</b-nav-item>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <b-nav-item class="button mx-auto" href="https://discord.gg/Vh9hPTF">Support Server</b-nav-item>
+        <b-nav-item class="button mx-auto" href="https://bansync.dcode.site/invite">Invite the Bot</b-nav-item>
+        <b-nav-item class="mx-auto" href="https://bansync.dcode.site/privacy_policy.pdf">Privacy Policy</b-nav-item>
       </b-navbar-nav>
+    </b-collapse>
   </b-navbar>
     <router-view/>
   </div>

@@ -3,18 +3,12 @@
     <b-container>
 
       <b-row class="">
-        <b-col cols="8" offset="2">
+        <b-col md="1" lg="6" class="mx-auto">
           <b-jumbotron header="BanSync" style="background-color: #01E8B9;"
           lead="Help keep out possible troublemakers from your server by knowing user's previous bans, or by linking your servers together to sync bans within them.">
           </b-jumbotron>
         </b-col>
-      </b-row>
-
-      <b-row>
-
-        <b-col cols="8">
-          <b-row>
-            <b-cols>
+            <b-col>
               <div>
                 <b-carousel
                   class="mb-4"
@@ -33,8 +27,12 @@
                   <b-carousel-slide img-src="/gallery/3.png"></b-carousel-slide>
                 </b-carousel>
               </div>
-            </b-cols>
-          </b-row>
+            </b-col>
+      </b-row>
+
+      <b-row>
+
+        <b-col cols="8">
           <b-row>
             <b-cols>
               <b-row>
@@ -43,7 +41,7 @@
                 </b-col>
               </b-row>
               <b-row>
-                <b-col cols="6" class="mb-4" v-for="feature in this.features" v-bind:key="feature">
+                <b-col lg="6" md="4" class="mb-4" v-for="feature in features" v-bind:key="feature">
                     <b-card bg-variant="light" text-variant="dark" :header="feature.title" class="text-center">
                       <b-card-text>{{feature.text}}</b-card-text>
                     </b-card>
@@ -61,7 +59,7 @@
             </b-col>
           </b-row>
           <b-row>
-            <b-col cols="6" v-for="member in this.crew" v-bind:key="member.name" class="mb-4">
+            <b-col lg="6" v-for="member in crew" v-bind:key="member.name" class="mb-4">
               <custommember :img="member.imgUrl" :crewname="member.name" :red="member.redirect" />
             </b-col>
           </b-row>
@@ -70,20 +68,28 @@
 
 
       <b-row>
-        <b-col cols="12">
+        <b-col>
           <b-card no-body class="palette-2 text-center mb-4 pt-2 text-white"><h3><b>As seen on</b></h3></b-card>
         </b-col>
       </b-row>
-      <b-row class="pb-5 text-center">
-        <b-col cols="4">
-          <b-img thumbnail src="https://top.gg/api/widget/743234197484994610.svg"></b-img>
+      <b-row style="text-align:center;">
+        <b-col cols="auto"/>
+        <b-col md="2" lg="auto" class="m-2">
+          <a href="https://top.gg/bot/743234197484994610">
+            <b-img thumbnail src="https://top.gg/api/widget/743234197484994610.svg"></b-img>
+          </a>
         </b-col>
-        <b-col cols="4">
-          <b-img thumbnail src="https://botsfordiscord.com/api/bot/743234197484994610/widget"></b-img>
+        <b-col md="2" lg="auto" class="m-2">
+          <a href="https://discords.com/bots/bot/743234197484994610">
+            <b-img thumbnail src="https://botsfordiscord.com/api/bot/743234197484994610/widget"></b-img>
+          </a>
         </b-col>
-        <b-col cols="4">
-          <b-img thumbnail src="https://discord.boats/api/widget/743234197484994610"></b-img>
+        <b-col md="2" lg="auto" class="m-2">
+          <a href="https://discord.boats/bot/743234197484994610">
+            <b-img thumbnail src="https://discord.boats/api/widget/743234197484994610"></b-img>
+          </a>
         </b-col>
+        <b-col cols="auto"/>
       </b-row>
 
     </b-container>
@@ -98,7 +104,7 @@ export default {
   components: {
     custommember
   },
-  data: function (){
+  data(){
     return {
       crew: [
         {
@@ -149,10 +155,6 @@ export default {
         {
           "title": "/ Slash Commands",
           "text": "BanSync has work in progress Slash Commands, but more are to come!"
-        },
-        {
-          "title": "Active Development",
-          "text": "BanSync is in active development and new features are being developed all the time."
         }
       ]
     }
@@ -163,5 +165,9 @@ export default {
 <style scoped>
 .palette-2 {
   background-color: #01a293;
+}
+
+.home {
+  margin: 5px;
 }
 </style>
